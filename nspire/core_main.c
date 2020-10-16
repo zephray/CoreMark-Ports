@@ -210,7 +210,7 @@ MAIN_RETURN_TYPE main(int argc, char *argv[]) {
 		divisor=(ee_u32)secs_passed;
 		if (divisor==0) /* some machines cast float to int as 0 since this conversion is not defined by ANSI, but we know at least one second passed */
 			divisor=1;
-		results[0].iterations*=1+10/divisor;
+		results[0].iterations*=1+20/divisor;
 	}
 
 	/* perform actual benchmark */
