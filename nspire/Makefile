@@ -6,7 +6,7 @@ GXX = nspire-g++
 LD  = nspire-ld
 GENZEHN = genzehn
 
-GCCFLAGS = -DITERATIONS=5000 -Wall -W -marm
+GCCFLAGS = -DITERATIONS=10000 -Wall -W -marm
 LDFLAGS = -Wl,--nspireio
 ZEHNFLAGS = --name "coremark"
 
