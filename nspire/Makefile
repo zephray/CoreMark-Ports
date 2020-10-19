@@ -6,12 +6,12 @@ GXX = nspire-g++
 LD  = nspire-ld
 GENZEHN = genzehn
 
-GCCFLAGS = -DITERATIONS=10000 -Wall -W -marm
+GCCFLAGS = -DITERATIONS=0 -Wall -W -marm
 LDFLAGS = -Wl,--nspireio
 ZEHNFLAGS = --name "coremark"
 
 ifeq ($(DEBUG),FALSE)
-	GCCFLAGS += -Os
+	GCCFLAGS += -O3
 else
 	GCCFLAGS += -O0 -g
 endif
